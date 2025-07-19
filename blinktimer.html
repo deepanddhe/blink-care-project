@@ -22,8 +22,12 @@
         }
        function stopBlinkReminder() {
             clearInterval(blinkInterval);
-            document.getElementById("blinkMessage").innerText = "Blink reminder stopped.";
+            document.getElementById("blinkMessage").innerHTML = `
+                Blink reminder stopped.<br><br>
+                <a href="index(home).html">
+                    <button style="font-size:16px; padding:10px 20px;">Back to Home</button>
+                </a>`;
         }
     </script>
-    </body>
+</body>
 </html>
